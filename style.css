@@ -1,0 +1,165 @@
+body {
+    font-family: 'Abel', sans-serif;
+    color: purple;
+    background-color: #F3E2EB;
+}
+
+/*
+h1 {
+    color: purple;
+    font-family: Calisto MT;
+    font-size: 32px; text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+*/
+
+.name {
+    color: purple;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 32px; 
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.contact {
+    color: purple;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+/*
+div {
+    background-color: #DFD0F1;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.content {
+    background-color: #DFD0F1;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); padding: 20px;
+    margin: auto;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+/*
+img {
+    float: left;
+    margin: -15px 20px 0px 5px;
+}
+*/
+
+.profilepic {
+    width: 100px;
+    float: left;
+    margin: -15px 20px 0px 5px;
+}
+
+.icon {
+    background-color: #225560;
+    width: auto;
+    border-radius: 500px;
+    color: #FFFAE3;
+    padding: 14px 25px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.8s ease;
+    margin: 0 100px;
+}
+
+.icon:before { 
+    font-family: FontAwesome;
+    color: #FFFAE3;
+    display: inline-block;
+    transition: opacity 0.8s ease;
+}
+
+#email.icon:before {
+    content: "\f0e0";
+}
+
+#phone.icon:before {
+    content: "\f095";
+}
+
+#linkedin.icon:before {
+    content: "\f08c";
+}
+
+.icon:hover {
+    background-color: #307888;
+    width: auto;
+}
+
+.icon:hover:before {
+    opacity: 0;
+    width: 0;
+}
+
+.icon .text { 
+    display: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.icon:hover .text { 
+    display: inline;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.text {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+    div {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    div {
+        padding: 14px;
+    }
+}
